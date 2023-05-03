@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark{
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h3>É recomendado fazer a utilização somente de tags semanticas.</h3>
+    <hr>
+
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semantica)</p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semantica)</p>
+
+    <hr>
+
+    <h2>Itálico / Enfase</h2>
+    <p>Nesta frase temos um termo <i>em itálico</i> usando a tag &lt;i&gt; (não semantica).</p>
+    <p>Nesta frase temos um termo <em>em enfase</em> usando a tag &lt;em&gt; (semantica).</p>
+    <hr>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;.</p>
+    <p>Para alterar a cor do termo marcado podemos utilizar o parametro de <strong>CSS</strong>, <mark>style</mark> em seguida da própia tag &lt;mark&gt;. </p>
+    <p>E tambem podemos fazer a alteração de style pelo cabeçario(head), alterando todos os <mark>termos marcado</mark> de uma só vez, com a tag &lt;mark&gt;.</p>
+    <hr>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> usando a tag &lt;big&gt; (hoje essa tag se encontra obsoleta, porém ainda funciona). </p>
+    <p>E tambem podemos criar um <small>texto pequeno</small> usando a tag &lt;small&gt;.</p>
+    <hr>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um texto como <del>excuido</del> para indicar que ele deve ser lido, mas não considerado, usando a tag &lt;del&gt;</p>
+    <hr>
+
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um texto como <ins>inserido</ins> usando a tag &lt;ins&gt; (semantica)</p>
+    <p>Existe também o <u>sublinhado</u> que é semelhante, feito com a tag &lt;u&gt; (não semantica)</p>
+    <hr>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup><mark>20</mark></sup>+3. <br> para mandar para cima utilizamos a tag &lt;sup&gt; </p>
+    <hr>
+
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub><mark>2</mark></sub>O. <br> para mandar para baixo utilizamos a tag &lt;sub&gt; </p>
+    <hr>
+
+</body>
+</html>

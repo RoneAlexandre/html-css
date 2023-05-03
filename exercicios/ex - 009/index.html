@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+            mark{
+                background-color: aqua;
+            }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <hr>
+
+    <h2>Listas Ordenadas</h2>
+   
+    <ol type=""> 
+        <li>Acordar
+        <li>Lavar o rosto
+        <li>Tomar café
+        <li>Escovar os dentes
+        <li>Estudar
+        <li>Almoçar
+        <li>Trabalhar 
+    </ol>
+
+    <p>A tag<mark> &lt;ol&gt;</mark> serve para criar uma lista dentro de uma ordem.</p>
+    <p>Dentro desta tag temos o parametro <mark>type=</mark>, onde configuramos o tipo de marcador da lista atual.<br> 
+    Temos as seguintes opções: 1,A,a,I,i. <br>(números, letras maíusculas/minúsculas, números romanos maíusculos/minúsculos). </p>
+    <p>Também podemos indicar o início da contagem usando o parametro <mark> start</mark> dentro da mesma tag.</p>
+    <hr>
+
+
+    <h2>Listas não ordenadas</h2>
+    
+    <ul>
+        <li>Pão</li>
+        <li>Batata</li>
+        <li>Salsicha</li>
+        <li>Milho</li>
+        <li>Farofa</li>
+        <li>Azeitona</li>
+        <li>Ovo</li>
+    </ul>
+
+    <p>A tag <mark>&lt;ul&gt;</mark> serve para criar uma lista não ordenada.</p>
+    <p>Dentro desta tag também usamos o parametro <mark>type=</mark>, para configurar o estilo de marcador da lista, porém agora em formatos.<br> Temos as seguintes opções: disc, circle, square. </p>
+    <hr>
+
+
+    <h2>Juntando Listas</h2>
+    <p>Podemos também criar lisas mistas, configurando listas dentro de outras listas. Veja o exemplo a seguir.</p>
+
+    <ol>
+        <li>Pratos</li>
+
+        <ol type="I">
+            <li>Banana milanesa</li>
+            <li>Frango Frito</li>
+            <li>Batata Frita</li>
+            <ul type="circle">
+                <li>com bacon e cheeder</li>
+                <li>Costela e catupiry</li>
+            </ul>
+            <li>Casquinha de Siri</li>
+        </ol>
+        <hr>
+
+        <li>Sobremesas</li>
+
+        <ol type="A">
+            <li>Pão de mel</li>
+            <li>Bolo</li>
+                <ul type="circle">
+                <li>Banana</li>
+                <li>Milho</li>
+                <li>Cenoura</li>
+                </ul>
+            <li>Talento</li>
+            <li>Kinder Ovo</li>
+        </ol>
+    </ol>
+    <hr>
+
+    <h2>Lista de definições</h2>
+    <p>Toda lista de definição esta dentro de uma tag <mark>&lt;dl&gt;</mark> (definition list).<br>
+    Cada termo é um <mark>&lt;dt&gt;</mark> (definition term).<br>
+    E cada descrição é um <mark>&lt;dd&gt;</mark> (definiton description). </p>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+    <strong>
+        <p>Assim como os itens da lista, as tags &lt;dt&gt; e &lt;dd&gt; possuem fechamento opcional.</p>
+    </strong>
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    background-color: gray;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 10px 5px 10px;
+    border: 5px groove rgb(41, 207, 41);
+    margin: 5px;
+}
+
+h1 {
+    display: inline-block;
+    box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.527);
+
+    padding: 10px;
+    border: 5px double rgb(100, 250, 0);
+    margin: 10px 0px 50px 20px;
+    /*  margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 80px;
+    margin-left: 20px; 
+*/
+}
+
+h2{
+    font-family: 0;
+}
+
+nav {
+    text-align: right;
+}
+
+p {
+    height: 0px;
+    box-shadow: 5px 15px 8px 1px black;
+}
+
+nav>a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+
+}
+
+nav>p:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+img,
+p {
+    display: inline-block;
+}
+
+/*main*/
+#a {
+    background-color: white;
+
+    padding: 5px 125px 5px 125px;
+}
+
+#b {
+    background-color: white;
+
+    padding: 5px 100px 5px 100px;
+
+}
+
+#c {
+    background-color: white;
+
+    padding: 5px 142px 5px 142px;
+
+}
+
+section {
+    display: inline-block;
+
+    margin: 20px 20px 0px 20px;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+section>h2:hover{
+    background-color: rgba(12, 12, 12, 0.212);
+    color: rgba(0, 41, 29, 0.918);
+}
+
+div#circulo{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    background-color: green;
+    
+    border-radius: 50%;
+}

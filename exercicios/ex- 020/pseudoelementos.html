@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{   
+           text-decoration:underline;
+           color: black;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        #principal::after{
+            content: '✪';
+            color: goldenrod;
+        }
+
+        #principal::before{
+            content: '✪';
+        }
+
+        #principal::first-letter{
+            color: goldenrod;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <a href="https://www.instagram.com/">
+            <li>Instagram</li>
+        </a>
+        
+        <a href="https://twitter.com/home?lang=pt">
+            <li>Twitter</li>
+        </a>
+        
+        <a href="https://www.youtube.com">
+            <li id="principal">Youtube</li>
+        </a>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+ </head>
+ <body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu própio servidor.</p>
+
+    <video width="560" poster="midia/capadovideo.png" controls loop>
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+    </video>
+    
+    <h2>Tag video e source</h2>
+    <p>Usamos a tag <mark>&lt;video&gt;</mark> para inserir o vídeo no site. Dentro desta tag temos os atributos:</p>
+    <ol>
+        <li><strong>widht:</strong> Onde inserimos o tamanho desejado para o arquivo carregar.</li>
+        <li><strong>poster:</strong> Usamos para colocar uma capa no vídeo, ela irá parecer enquanto o vídeo não for iniciado.</li>
+        <li><strong>controls:</strong> Para o controle ser exibido.</li>    
+        <li><strong>loop</strong> Para iniciar o vídeo automaticamente de novo, assim que chegar ao fim.</li>
+    </ol>
+    
+    <p>Podemos inserir vários <strong>source</strong> indicando diferentes formatos do mesmo vídeo.</p>
+   
+    <img src="midia/tabeladeformatos.png" alt="">
+    <hr>
+
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Este vídeo está hospedado no YouTube.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Para inserir um vídeo do YouTube, vamos até o vídeo desejado, clicamos na ferramenta <strong>compartilhar</strong> e logo após em <strong>incorporar</strong>, o própio YouTube nos disponibiliza o código, basta copiar e colar dentro do nosso projeto.</p>
+    <hr>
+
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <p>Este vídeo está hospedado no Vimeo.</p>
+
+    <iframe src="https://player.vimeo.com/video/330207644?h=6a9e658aaf&color=ff0179&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Para inserir um vídeo do Vimeo, vamos até o vídeo desejado, clicamos na ferramenta <strong>compartilhar</strong> e logo após em <strong>incorporar</strong>, o própio Vimeo nos disponibiliza o código, basta copiar e colar dentro do nosso projeto.</p>
+ 
+</body>
+ </html>

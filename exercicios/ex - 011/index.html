@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <style>
+        mark{
+            background-color: greenyellow;
+            }
+    </style>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Imagens diversas para ser utilizadas em diferentes dispositivos ou simplesmente para ser alteradas quando diminuimos ou aumentamos o nosso navegador. </p> 
+    <hr>
+
+    <h2>Tags picture e source</h2>
+    <p>A tag <mark>&lt;picture&gt;</mark> tem a função de concentrar outras fontes de imagem. Dentro dela colocamos a tag <mark>&lt;img&gt;</mark> para carregar a imagem que será usada como imagem padrão. <br>
+    Acima da tag <strong>img</strong>, ainda dentro do aninhamento <strong>picture</strong>, inserimos uma outra tag chamada <mark>&lt;source&gt;</mark> (neste caso usaremos <strong>source:media:type</strong>) que possui três atributos:</p>
+  
+    <ol type="1">
+        <li><strong>media</strong>: indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo <strong>srcset</strong>.</li>
+        <li><strong>srcset</strong>: vai indicar o nome da imagem que será carregada quando o tamanho indicado for atingido.</li>
+        <li><strong>type</strong>: vai indicar o media type da imagem que usamos.</li>
+   </ol>
+
+   <p>É importante que exista uma ordem entre os <strong>source</strong> e nessa nossa configuração, os primeiros itens que se encontram mais acima sejam os de menores tamanhos determinado em max-width e que os seguintes sejam maiores, de uma forma crescente. O último item dentro de &lt;picture&gt; deve ser a imagem padrão desejada, inserida através da tag &lt;img&gt;</p>
+
+   <hr>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/média.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexível">
+    </picture>
+    <hr>
+
+    <h1>Reproduzindo Áudios</h1>
+   <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    
+   <audio preload="metadata" controls loop>
+        <source src="midia/Spanish Moss - Chris Haugen.mp3" type="audio/mpeg">
+        <source src="midia/Spanish Moss - Chris Haugen.ogg" type="audio/ogg">
+        <source src="midia/Spanish Moss - Chris Haugen.wav" type="audio/wav">
+    
+        <p>Caso o seu navegador não esteja suportado carregar o áudio, clique aqui para baixá-lo <a href="midia/Spanish Moss - Chris Haugen.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <hr> 
+
+    <h2>Tag &lt;audio&gt; e seus principais atributos.</h2>
+
+    <p><mark>Preload:</mark> <br>
+    O atributo <strong>preload</strong> indica se o áudio será pré-carregado ou não, e aceita três valores;</p>
+    <ol type="1">
+        <li><strong>METADATA:</strong> vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos etc).</li>
+        <li><strong>NONE:</strong> não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução.</li>
+        <li><strong>AUTO:</strong> (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play.</li>
+    </ol>
+
+    <p><mark>Controls:</mark> <br>
+    O atributo <strong>controls</strong> vai apresentar o botão de player na tela. Caso não seja inserido dentro da tag &lt;audio&gt;, o controle será transparente e o usuário não poderá interagir com ele.</p>
+
+    <p><mark>Autoplay</mark> <br>
+    O atributo <strong>autoplay</strong> quando inserido, vai iniciar a reprodução automaticamente do áudio assim que a página for carregada.</p>
+
+    <p><mark>Loop</mark> <br>
+    O atributo <strong>loop</strong> quando inserido, tem a função de fazer com que o áudio seja repetido eternamente, assim que terminar a sua reprodução ele iniciará automaticamente de novo.</p>
+    <hr>
+
+    <h2>Source dentro da tag &lt; audio&gt;.</h2>
+    <p>Dentro da tag <mark>audio</mark> e seus atributos, podemos adicionar vários <strong>&lt;source&gt;</strong> indicando formatos diferentes do mesmo áudio. Colocamos primeiro o formato de áudio favorito. Os demais inseridos em seguida, só serão carregados caso o primeiro falhe. <br>
+    Caso todos falhem, criamos um parágrafo disponibilizando o download do arquivo MP3 para que o usuário baixe e ouça no player padrão de seu dispositivo.</p>
+
+    <p>No caso da utilização de áudio usamos <mark>source:src type</mark> onde dentro de <strong>src</strong> inserimos o arquivo desejado e em <strong>type</strong> o estilo de áudio que estamos utilizando.</p>
+    <hr>
+
+    <h1>Formatos de vídeos</h1>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    <style>
+            mark{
+                background-color: pink
+                }
+    </style>
+</head>
+<body>
+    <h1>Usando links externos</h1> 
+    <hr>
+
+    <p>Usamos a <mark>tag</mark> &lt;a&gt; para inserir um link dentro do site (âncora). </p>
+    <p>O principal atributo dentro desta tag é o <mark>href</mark> local onde inserimos o link desejado. <br> Dentro deste atributo colocamos uma URL completa para outro site.</p>
+    <p>Outro atributo que podemos usar para controlar onde o site vai abrir é o <mark>target</mark> que suporta os seguintes valores: <br> 
+    <ul type="disc">
+        <li>_blanck (vai abrir o link em uma nova janela em branco). </li>
+        
+        <li>_self (vai abrir o link na janela ou frame atual (padrão). </li>
+        
+        <li>_top (vai desfazer todos os frames e abrir o destino no navegador completo). </li>
+        
+        <li>_parent (similar ao uso do _top em uma referência á janela mãe). </li>
+        
+        <li>nome-do-frame (caso esteja usando frames, indicar o nome da janela abrir.) </li>
+    </ul> </p>
+
+    <p>Você pode acessar o meu perfil <a href="https://www.instagram.com/rone_alexandremt/" target="_blank" rel="external" >https://www.instagram.com/rone_alexandremt/</a> através deste link. 
+
+    <p>Tambem existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo <mark>rel</mark>. Esse atributo aceita vários valores, entre eles temos: 
+    <ul>    
+        <li>next (indica que o link é para a próxima parte do documento atual).</li>
+
+        <li>prev (indica que o link é para a parte anterior documento atual). </li>
+
+        <li>author (indica que é um link para o site do autor do artigo atual). </li>
+
+        <li>external (indica que é um link para outro site que não faz parte do site). </li>
+    </ul></p>
+    <hr>
+
+    <h1>Links internos</h1>
+    <h3>Está é a primeira página do meu site.</h3>
+
+    <p>Para criar um link interno, onde levamos o visitante a outra página dentro do nosso própio site, criamos um novo arquivo junto ao nosso projeto inicial. <br> 
+    Usando também a tag <mark>&lt;a&gt;</mark> inserimos o nome do novo arquivo, porém no caso de indicar um link interno não precisamos colocar a URL completa. Fazendo isso passamos a ter um local para clicar e ser enviado a próxima página, no caso de avançar para a próxima página, inserimos dentro do atributo <mark>rel</mark> o valor <mark>next</mark>.</p>
+    
+    
+    <p>&rarr; Caso queira, pode acessar minha página de receitas(2) <a href="pag002.html" rel="next" target="_self">próxima página</a> através deste link. </p>
+
+    <p>&rarr; Podemos também acessar minha página de noticias(3) <a href="noticias/pag003.html" rel="next" target="_self">última página</a> através deste link. </p>
+    <hr>
+
+    <h1>Links para dowload</h1>
+    <p>Para efetuar o dowload de algum material PDF ou de um arquivo ZIP qualquer, basta gerar o link diretamente  do arquivo que se deseja efetuar o dowload e adicionar o atributo <mark>dowload</mark> com o valor configurado para o nome do arquivo a ser baixado e o atributo <mark>type</mark> para indicar ao navegador que tipo de arquivo está sendo baixado.</p>
+
+    <li><a href="linkdowload/arte_html+css.pdf" download="arte_html+css.pdf" type="aplication/pdf" >Baixar PDF logo</a> </li>
+    
+    <li><a href="linkdowload/arte_html+css.rar" download="arte_html+css.rar" type="aplication/pdf">PDF compactado em ZIP</a></li>
+
+    <p>Temos aqui alguns media types bem usados no dia-a-dia:</p>
+    <li>aplication/zip</li>
+    <li>text/html</li>
+    <li>lexl/css</li>
+    <li>text/javascript</li>
+    <li>video/mp4</li>
+    <li>video/H264</li>
+    <li>video/JPEG</li>
+    <li>audio/aac</li>
+    <li>audio/mpeg</li>
+    <li>font/ttf</li>
+    <li>image/jpeg</li>
+    <li>image/png</li>
+    
+</body>
+</html>
